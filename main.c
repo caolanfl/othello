@@ -52,13 +52,13 @@ int main() {
   // Output winner and scores
   if(player_1.score == player_2.score) {
     printf("\n%s : %d  %s : %d \n", player_1.name, player_1.score, player_2.name, player_2.score);
-    printf("\nDRAW");
+    printf("DRAW");
   } else if(player_1.score > player_2.score) {
     printf("\n%s : %d  %s : %d \n", player_1.name, player_1.score, player_2.name, player_2.score);
-    printf("\%s wins!", player_1.name);
+    printf("%s wins!", player_1.name);
   } else {
     printf("\n%s : %d  %s : %d \n", player_1.name, player_1.score, player_2.name, player_2.score);
-    printf("\%s wins!", player_2.name);
+    printf("%s wins!", player_2.name);
   }
   update_result_file(player_1.name, player_1.score, player_2.name, player_2.score); // Append results to file
 }
