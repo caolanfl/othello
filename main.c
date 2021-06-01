@@ -37,6 +37,8 @@ int main() {
     }
     if(move[0] == 'p') { // If player passed update invalid_streak
       invalid_streak += 1;
+    } else {
+      invalid_streak = 0;
     }
     if(player_1.score + player_2.score == 64 || invalid_streak == 2) { // If board is full or 2 turns in a row had no valid moves end the game
       break;
